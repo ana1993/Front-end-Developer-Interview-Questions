@@ -1,16 +1,49 @@
 # JS Questions:
 
 * Explain event delegation
+
+The idea is that if we have a lot of elements handled in a similar way, then instead of assigning a handler to each of them – we put a single handler on their common ancestor.
+
+
+
 * Explain how `this` works in JavaScript
-* Explain how prototypal inheritance works
-* What do you think of AMD vs CommonJS?
-* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
+
+
+The this keyword evaluates to the value of the ThisBinding of the current execution context
+
+<script>
+  alert("I'm evaluated in the initial global execution context!");
+
+  setTimeout(function () {
+      alert("I'm NOT evaluated in the initial global execution context.");
+  }, 1);
+</script>
+
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
+
+https://medium.com/@rlynjb/js-interview-question-what-s-the-difference-between-a-variable-that-is-null-undefined-or-bf7233cef1c2
+
+
 * What is a closure, and how/why would you use one?
+
+https://medium.com/@rlynjb/js-interview-question-what-is-a-closure-and-how-why-would-you-use-one-b6fd45ea95f6
+
+
+
 * Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
+
+
+
+
+
+
 * What's a typical use case for anonymous functions?
+
+https://medium.com/@rlynjb/js-interview-question-what-s-a-typical-use-case-for-anonymous-functions-54cf547b2a0e
+
+
+
+
 * How do you organize your code? (module pattern, classical inheritance?)
 * What's the difference between host objects and native objects?
 * Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
